@@ -1,0 +1,830 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64E0635A20C9D25B0046E7DF /* MenuViewController in Resources */ = {isa = PBXBuildFile; fileRef = 64E0635920C9D25B0046E7DF /* MenuViewController */; };
+		64E0635C20C9D2690046E7DF /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E0635B20C9D2690046E7DF /* GameViewController.swift */; };
+		64E0635E20C9D2730046E7DF /* WarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E0635D20C9D2730046E7DF /* WarViewController.swift */; };
+		64E0636020C9D2B00046E7DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64E0635F20C9D2B00046E7DF /* Main.storyboard */; };
+		EC08F30B20E5ACCB00CF28F2 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC08F30A20E5ACCB00CF28F2 /* Board.swift */; };
+		EC30F40B20733B7600DFAC69 /* pop.wav in Resources */ = {isa = PBXBuildFile; fileRef = EC30F40920733B7500DFAC69 /* pop.wav */; };
+		EC30F40C20733B7600DFAC69 /* flip.wav in Resources */ = {isa = PBXBuildFile; fileRef = EC30F40A20733B7600DFAC69 /* flip.wav */; };
+		EC30F41020733C0C00DFAC69 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC30F40F20733C0C00DFAC69 /* Sound.swift */; };
+		EC4AE7DC2072B5190071BA99 /* War.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4AE7DB2072B5190071BA99 /* War.swift */; };
+		EC677E5A203BD12600C9A350 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC677E59203BD12600C9A350 /* AppDelegate.swift */; };
+		EC677E5E203BD12600C9A350 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = EC677E5D203BD12600C9A350 /* Actions.sks */; };
+		EC677E67203BD12600C9A350 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC677E66203BD12600C9A350 /* Assets.xcassets */; };
+		EC677E75203BD12600C9A350 /* Cards_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC677E74203BD12600C9A350 /* Cards_Tests.swift */; };
+		EC677E80203BD12600C9A350 /* Cards_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC677E7F203BD12600C9A350 /* Cards_UITests.swift */; };
+		EC6AC51D204DECE80049B388 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6AC51C204DECE80049B388 /* Deck.swift */; };
+		EC6AC51F204DEDD30049B388 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6AC51E204DEDD30049B388 /* Extensions.swift */; };
+		EC6AC521204DF31D0049B388 /* Hand.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6AC520204DF31D0049B388 /* Hand.swift */; };
+		EC9FF942214311CB008C7223 /* Blackjack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9FF941214311CB008C7223 /* Blackjack.swift */; };
+		EC9FF944214311E4008C7223 /* BlackjackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9FF943214311E4008C7223 /* BlackjackViewController.swift */; };
+		EC9FF948214340E5008C7223 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9FF947214340E5008C7223 /* Money.swift */; };
+		EC9FF94A2143411A008C7223 /* Pot.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9FF9492143411A008C7223 /* Pot.swift */; };
+		ECA883FF204CB0C300302F15 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA883FE204CB0C300302F15 /* Card.swift */; };
+		ECC2DBBB2176B5630052DF1D /* Cards.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECC2DBBA2176B5630052DF1D /* Cards.xcassets */; };
+		ECC2DBBE2176BADE0052DF1D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECC2DBBD2176BADE0052DF1D /* Default-568h@2x.png */; };
+		ECC2DBC02176BB230052DF1D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC2DBBF2176BB220052DF1D /* MenuViewController.swift */; };
+		ECC2DBC22176BC700052DF1D /* SinglePlayerMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC2DBC12176BC700052DF1D /* SinglePlayerMenuViewController.swift */; };
+		ECC2DBC52176BE960052DF1D /* DeviceSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC2DBC42176BE960052DF1D /* DeviceSizes.swift */; };
+		ECC2DBC72176C5710052DF1D /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC2DBC62176C5710052DF1D /* Fonts.swift */; };
+		ECC2DBC92176C7D60052DF1D /* BaseGameLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC2DBC82176C7D60052DF1D /* BaseGameLayout.swift */; };
+		ECC2DBCC2176CB5E0052DF1D /* ParallaxEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC2DBCB2176CB5E0052DF1D /* ParallaxEffect.swift */; };
+		ECC2DBCE2176CBBE0052DF1D /* WeakContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC2DBCD2176CBBE0052DF1D /* WeakContainer.swift */; };
+		ECC2DBD02176CC8A0052DF1D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC2DBCF2176CC8A0052DF1D /* GameScene.swift */; };
+		ECC2DBD32176CD840052DF1D /* Buttons in Resources */ = {isa = PBXBuildFile; fileRef = ECC2DBD12176CD840052DF1D /* Buttons */; };
+		ECC2DBD42176CD840052DF1D /* Overlays in Resources */ = {isa = PBXBuildFile; fileRef = ECC2DBD22176CD840052DF1D /* Overlays */; };
+		ECC2DBD6217817690052DF1D /* GameSceneLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC2DBD5217817690052DF1D /* GameSceneLayout.swift */; };
+		ECC2DBD821781A330052DF1D /* GameSetupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC2DBD721781A330052DF1D /* GameSetupManager.swift */; };
+		ECC2DBDE217823B10052DF1D /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC2DBDD217823B10052DF1D /* CardModel.swift */; };
+		ECC2DBE0217825060052DF1D /* Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC2DBDF217825060052DF1D /* Cards.swift */; };
+		ECC2DBE2217827B60052DF1D /* Rank.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC2DBE1217827B60052DF1D /* Rank.swift */; };
+		ECC2DBE4217827E80052DF1D /* Suit.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC2DBE3217827E80052DF1D /* Suit.swift */; };
+		ECEE54EE21701438004DC899 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEE54ED21701438004DC899 /* OptionsViewController.swift */; };
+		ECFD368920CDA4800009CD65 /* Discard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFD368820CDA4800009CD65 /* Discard.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC677E71203BD12600C9A350 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC677E4E203BD12600C9A350 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC677E55203BD12600C9A350;
+			remoteInfo = "Cards!";
+		};
+		EC677E7C203BD12600C9A350 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC677E4E203BD12600C9A350 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC677E55203BD12600C9A350;
+			remoteInfo = "Cards!";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		64E0635920C9D25B0046E7DF /* MenuViewController */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MenuViewController; path = "Cards!/MenuViewController"; sourceTree = SOURCE_ROOT; };
+		64E0635B20C9D2690046E7DF /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		64E0635D20C9D2730046E7DF /* WarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarViewController.swift; sourceTree = "<group>"; };
+		64E0635F20C9D2B00046E7DF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		EC08F30A20E5ACCB00CF28F2 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		EC30F40920733B7500DFAC69 /* pop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pop.wav; sourceTree = "<group>"; };
+		EC30F40A20733B7600DFAC69 /* flip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flip.wav; sourceTree = "<group>"; };
+		EC30F40F20733C0C00DFAC69 /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
+		EC4AE7DB2072B5190071BA99 /* War.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = War.swift; sourceTree = "<group>"; };
+		EC677E56203BD12600C9A350 /* Cards!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cards!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC677E59203BD12600C9A350 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC677E5D203BD12600C9A350 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		EC677E66203BD12600C9A350 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC677E6B203BD12600C9A350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC677E70203BD12600C9A350 /* Cards!Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cards!Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC677E74203BD12600C9A350 /* Cards_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards_Tests.swift; sourceTree = "<group>"; };
+		EC677E76203BD12600C9A350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC677E7B203BD12600C9A350 /* Cards!UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cards!UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC677E7F203BD12600C9A350 /* Cards_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards_UITests.swift; sourceTree = "<group>"; };
+		EC677E81203BD12600C9A350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC6AC51C204DECE80049B388 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		EC6AC51E204DEDD30049B388 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EC6AC520204DF31D0049B388 /* Hand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hand.swift; sourceTree = "<group>"; };
+		EC9FF941214311CB008C7223 /* Blackjack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blackjack.swift; sourceTree = "<group>"; };
+		EC9FF943214311E4008C7223 /* BlackjackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackjackViewController.swift; sourceTree = "<group>"; };
+		EC9FF947214340E5008C7223 /* Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
+		EC9FF9492143411A008C7223 /* Pot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pot.swift; sourceTree = "<group>"; };
+		ECA883FE204CB0C300302F15 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		ECAA6A5D2114CAAD00268A4C /* Cards!.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Cards!.entitlements"; sourceTree = "<group>"; };
+		ECC2DBBA2176B5630052DF1D /* Cards.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Cards.xcassets; sourceTree = "<group>"; };
+		ECC2DBBD2176BADE0052DF1D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		ECC2DBBF2176BB220052DF1D /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		ECC2DBC12176BC700052DF1D /* SinglePlayerMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SinglePlayerMenuViewController.swift; path = "Cards!/SinglePlayer/SinglePlayerMenuViewController.swift"; sourceTree = SOURCE_ROOT; };
+		ECC2DBC42176BE960052DF1D /* DeviceSizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSizes.swift; sourceTree = "<group>"; };
+		ECC2DBC62176C5710052DF1D /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		ECC2DBC82176C7D60052DF1D /* BaseGameLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseGameLayout.swift; sourceTree = "<group>"; };
+		ECC2DBCA2176CAF80052DF1D /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		ECC2DBCB2176CB5E0052DF1D /* ParallaxEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxEffect.swift; sourceTree = "<group>"; };
+		ECC2DBCD2176CBBE0052DF1D /* WeakContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakContainer.swift; sourceTree = "<group>"; };
+		ECC2DBCF2176CC8A0052DF1D /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		ECC2DBD12176CD840052DF1D /* Buttons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Buttons; sourceTree = "<group>"; };
+		ECC2DBD22176CD840052DF1D /* Overlays */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Overlays; sourceTree = "<group>"; };
+		ECC2DBD5217817690052DF1D /* GameSceneLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSceneLayout.swift; sourceTree = "<group>"; };
+		ECC2DBD721781A330052DF1D /* GameSetupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSetupManager.swift; sourceTree = "<group>"; };
+		ECC2DBDD217823B10052DF1D /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		ECC2DBDF217825060052DF1D /* Cards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
+		ECC2DBE1217827B60052DF1D /* Rank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rank.swift; sourceTree = "<group>"; };
+		ECC2DBE3217827E80052DF1D /* Suit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suit.swift; sourceTree = "<group>"; };
+		ECEE54ED21701438004DC899 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
+		ECFD368820CDA4800009CD65 /* Discard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discard.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC677E53203BD12600C9A350 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC677E6D203BD12600C9A350 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC677E78203BD12600C9A350 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC30F40E20733BBC00DFAC69 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				EC30F40F20733C0C00DFAC69 /* Sound.swift */,
+				EC30F40A20733B7600DFAC69 /* flip.wav */,
+				EC30F40920733B7500DFAC69 /* pop.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		EC4AE7DA2072B4F90071BA99 /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				EC9FF941214311CB008C7223 /* Blackjack.swift */,
+				EC4AE7DB2072B5190071BA99 /* War.swift */,
+			);
+			path = Games;
+			sourceTree = "<group>";
+		};
+		EC677E4D203BD12600C9A350 = {
+			isa = PBXGroup;
+			children = (
+				EC677E5D203BD12600C9A350 /* Actions.sks */,
+				EC677E58203BD12600C9A350 /* Cards! */,
+				ECAA6A5D2114CAAD00268A4C /* Cards!.entitlements */,
+				ECEE54E821700F82004DC899 /* ViewControllers */,
+				EC677E73203BD12600C9A350 /* Cards!Tests */,
+				EC677E7E203BD12600C9A350 /* Cards!UITests */,
+				ECC2DBBD2176BADE0052DF1D /* Default-568h@2x.png */,
+				EC677E6B203BD12600C9A350 /* Info.plist */,
+				EC677E57203BD12600C9A350 /* Products */,
+				ECC2DBB12176B4A70052DF1D /* Shared */,
+			);
+			sourceTree = "<group>";
+		};
+		EC677E57203BD12600C9A350 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC677E56203BD12600C9A350 /* Cards!.app */,
+				EC677E70203BD12600C9A350 /* Cards!Tests.xctest */,
+				EC677E7B203BD12600C9A350 /* Cards!UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC677E58203BD12600C9A350 /* Cards! */ = {
+			isa = PBXGroup;
+			children = (
+				EC677E59203BD12600C9A350 /* AppDelegate.swift */,
+				64E0635F20C9D2B00046E7DF /* Main.storyboard */,
+				64E0635920C9D25B0046E7DF /* MenuViewController */,
+				EC9FF947214340E5008C7223 /* Money.swift */,
+				EC08F30A20E5ACCB00CF28F2 /* Board.swift */,
+				EC6AC51C204DECE80049B388 /* Deck.swift */,
+				EC6AC520204DF31D0049B388 /* Hand.swift */,
+				ECFD368820CDA4800009CD65 /* Discard.swift */,
+				EC9FF9492143411A008C7223 /* Pot.swift */,
+			);
+			path = "Cards!";
+			sourceTree = "<group>";
+		};
+		EC677E73203BD12600C9A350 /* Cards!Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EC677E74203BD12600C9A350 /* Cards_Tests.swift */,
+				EC677E76203BD12600C9A350 /* Info.plist */,
+			);
+			path = "Cards!Tests";
+			sourceTree = "<group>";
+		};
+		EC677E7E203BD12600C9A350 /* Cards!UITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC677E7F203BD12600C9A350 /* Cards_UITests.swift */,
+				EC677E81203BD12600C9A350 /* Info.plist */,
+			);
+			path = "Cards!UITests";
+			sourceTree = "<group>";
+		};
+		ECC2DBB12176B4A70052DF1D /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				ECC2DBC32176BE7B0052DF1D /* Enums */,
+				ECC2DBB22176B4C70052DF1D /* Assets */,
+				ECC2DBB32176B4DA0052DF1D /* Extentions */,
+				EC4AE7DA2072B4F90071BA99 /* Games */,
+				ECC2DBB52176B5020052DF1D /* Layouts */,
+				ECC2DBB42176B4F20052DF1D /* Libraries */,
+				ECC2DBB62176B5120052DF1D /* Managers */,
+				ECC2DBB72176B51B0052DF1D /* Models */,
+				ECC2DBBC2176B5820052DF1D /* Other */,
+				ECC2DBB82176B5210052DF1D /* Scenes */,
+				EC30F40E20733BBC00DFAC69 /* Sounds */,
+				ECC2DBB92176B53F0052DF1D /* Sprites */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		ECC2DBB22176B4C70052DF1D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				EC677E66203BD12600C9A350 /* Assets.xcassets */,
+				ECC2DBBA2176B5630052DF1D /* Cards.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		ECC2DBB32176B4DA0052DF1D /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				EC6AC51E204DEDD30049B388 /* Extensions.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		ECC2DBB42176B4F20052DF1D /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		ECC2DBB52176B5020052DF1D /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				ECC2DBC82176C7D60052DF1D /* BaseGameLayout.swift */,
+				ECC2DBD5217817690052DF1D /* GameSceneLayout.swift */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		ECC2DBB62176B5120052DF1D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				ECC2DBD721781A330052DF1D /* GameSetupManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		ECC2DBB72176B51B0052DF1D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ECA883FE204CB0C300302F15 /* Card.swift */,
+				ECC2DBDD217823B10052DF1D /* CardModel.swift */,
+				ECC2DBDF217825060052DF1D /* Cards.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ECC2DBB82176B5210052DF1D /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				ECC2DBCF2176CC8A0052DF1D /* GameScene.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		ECC2DBB92176B53F0052DF1D /* Sprites */ = {
+			isa = PBXGroup;
+			children = (
+				ECC2DBD12176CD840052DF1D /* Buttons */,
+				ECC2DBD22176CD840052DF1D /* Overlays */,
+			);
+			path = Sprites;
+			sourceTree = "<group>";
+		};
+		ECC2DBBC2176B5820052DF1D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				ECC2DBCA2176CAF80052DF1D /* BridgingHeader.h */,
+				ECC2DBCB2176CB5E0052DF1D /* ParallaxEffect.swift */,
+				ECC2DBCD2176CBBE0052DF1D /* WeakContainer.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		ECC2DBC32176BE7B0052DF1D /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				ECC2DBC42176BE960052DF1D /* DeviceSizes.swift */,
+				ECC2DBC62176C5710052DF1D /* Fonts.swift */,
+				ECC2DBE1217827B60052DF1D /* Rank.swift */,
+				ECC2DBE3217827E80052DF1D /* Suit.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		ECEE54E821700F82004DC899 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ECEE54EC21700FF3004DC899 /* Menus */,
+				ECEE54EB21700FEA004DC899 /* Games */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ECEE54EB21700FEA004DC899 /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				EC9FF943214311E4008C7223 /* BlackjackViewController.swift */,
+				64E0635D20C9D2730046E7DF /* WarViewController.swift */,
+			);
+			path = Games;
+			sourceTree = "<group>";
+		};
+		ECEE54EC21700FF3004DC899 /* Menus */ = {
+			isa = PBXGroup;
+			children = (
+				64E0635B20C9D2690046E7DF /* GameViewController.swift */,
+				ECC2DBBF2176BB220052DF1D /* MenuViewController.swift */,
+				ECC2DBC12176BC700052DF1D /* SinglePlayerMenuViewController.swift */,
+				ECEE54ED21701438004DC899 /* OptionsViewController.swift */,
+			);
+			path = Menus;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC677E55203BD12600C9A350 /* Cards! */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC677E84203BD12600C9A350 /* Build configuration list for PBXNativeTarget "Cards!" */;
+			buildPhases = (
+				EC677E52203BD12600C9A350 /* Sources */,
+				EC677E53203BD12600C9A350 /* Frameworks */,
+				EC677E54203BD12600C9A350 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cards!";
+			productName = "Cards!";
+			productReference = EC677E56203BD12600C9A350 /* Cards!.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC677E6F203BD12600C9A350 /* Cards!Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC677E87203BD12600C9A350 /* Build configuration list for PBXNativeTarget "Cards!Tests" */;
+			buildPhases = (
+				EC677E6C203BD12600C9A350 /* Sources */,
+				EC677E6D203BD12600C9A350 /* Frameworks */,
+				EC677E6E203BD12600C9A350 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC677E72203BD12600C9A350 /* PBXTargetDependency */,
+			);
+			name = "Cards!Tests";
+			productName = "Cards!Tests";
+			productReference = EC677E70203BD12600C9A350 /* Cards!Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC677E7A203BD12600C9A350 /* Cards!UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC677E8A203BD12600C9A350 /* Build configuration list for PBXNativeTarget "Cards!UITests" */;
+			buildPhases = (
+				EC677E77203BD12600C9A350 /* Sources */,
+				EC677E78203BD12600C9A350 /* Frameworks */,
+				EC677E79203BD12600C9A350 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC677E7D203BD12600C9A350 /* PBXTargetDependency */,
+			);
+			name = "Cards!UITests";
+			productName = "Cards!UITests";
+			productReference = EC677E7B203BD12600C9A350 /* Cards!UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC677E4E203BD12600C9A350 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = AustinsApps;
+				TargetAttributes = {
+					EC677E55203BD12600C9A350 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplePay = {
+								enabled = 0;
+							};
+						};
+					};
+					EC677E6F203BD12600C9A350 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EC677E55203BD12600C9A350;
+					};
+					EC677E7A203BD12600C9A350 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EC677E55203BD12600C9A350;
+					};
+				};
+			};
+			buildConfigurationList = EC677E51203BD12600C9A350 /* Build configuration list for PBXProject "Cards!" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC677E4D203BD12600C9A350;
+			productRefGroup = EC677E57203BD12600C9A350 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC677E55203BD12600C9A350 /* Cards! */,
+				EC677E6F203BD12600C9A350 /* Cards!Tests */,
+				EC677E7A203BD12600C9A350 /* Cards!UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC677E54203BD12600C9A350 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC30F40B20733B7600DFAC69 /* pop.wav in Resources */,
+				ECC2DBBB2176B5630052DF1D /* Cards.xcassets in Resources */,
+				EC30F40C20733B7600DFAC69 /* flip.wav in Resources */,
+				64E0636020C9D2B00046E7DF /* Main.storyboard in Resources */,
+				EC677E67203BD12600C9A350 /* Assets.xcassets in Resources */,
+				ECC2DBBE2176BADE0052DF1D /* Default-568h@2x.png in Resources */,
+				ECC2DBD32176CD840052DF1D /* Buttons in Resources */,
+				ECC2DBD42176CD840052DF1D /* Overlays in Resources */,
+				64E0635A20C9D25B0046E7DF /* MenuViewController in Resources */,
+				EC677E5E203BD12600C9A350 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC677E6E203BD12600C9A350 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC677E79203BD12600C9A350 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC677E52203BD12600C9A350 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64E0635C20C9D2690046E7DF /* GameViewController.swift in Sources */,
+				EC9FF944214311E4008C7223 /* BlackjackViewController.swift in Sources */,
+				ECEE54EE21701438004DC899 /* OptionsViewController.swift in Sources */,
+				ECC2DBE0217825060052DF1D /* Cards.swift in Sources */,
+				EC08F30B20E5ACCB00CF28F2 /* Board.swift in Sources */,
+				ECC2DBD02176CC8A0052DF1D /* GameScene.swift in Sources */,
+				EC6AC51F204DEDD30049B388 /* Extensions.swift in Sources */,
+				ECC2DBE2217827B60052DF1D /* Rank.swift in Sources */,
+				EC9FF942214311CB008C7223 /* Blackjack.swift in Sources */,
+				EC9FF948214340E5008C7223 /* Money.swift in Sources */,
+				ECC2DBD6217817690052DF1D /* GameSceneLayout.swift in Sources */,
+				EC9FF94A2143411A008C7223 /* Pot.swift in Sources */,
+				EC6AC51D204DECE80049B388 /* Deck.swift in Sources */,
+				64E0635E20C9D2730046E7DF /* WarViewController.swift in Sources */,
+				EC30F41020733C0C00DFAC69 /* Sound.swift in Sources */,
+				ECC2DBC52176BE960052DF1D /* DeviceSizes.swift in Sources */,
+				ECC2DBE4217827E80052DF1D /* Suit.swift in Sources */,
+				EC6AC521204DF31D0049B388 /* Hand.swift in Sources */,
+				ECC2DBC22176BC700052DF1D /* SinglePlayerMenuViewController.swift in Sources */,
+				ECC2DBC02176BB230052DF1D /* MenuViewController.swift in Sources */,
+				ECC2DBD821781A330052DF1D /* GameSetupManager.swift in Sources */,
+				ECC2DBCC2176CB5E0052DF1D /* ParallaxEffect.swift in Sources */,
+				EC677E5A203BD12600C9A350 /* AppDelegate.swift in Sources */,
+				ECC2DBC72176C5710052DF1D /* Fonts.swift in Sources */,
+				EC4AE7DC2072B5190071BA99 /* War.swift in Sources */,
+				ECFD368920CDA4800009CD65 /* Discard.swift in Sources */,
+				ECC2DBDE217823B10052DF1D /* CardModel.swift in Sources */,
+				ECA883FF204CB0C300302F15 /* Card.swift in Sources */,
+				ECC2DBC92176C7D60052DF1D /* BaseGameLayout.swift in Sources */,
+				ECC2DBCE2176CBBE0052DF1D /* WeakContainer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC677E6C203BD12600C9A350 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC677E75203BD12600C9A350 /* Cards_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC677E77203BD12600C9A350 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC677E80203BD12600C9A350 /* Cards_UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC677E72203BD12600C9A350 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC677E55203BD12600C9A350 /* Cards! */;
+			targetProxy = EC677E71203BD12600C9A350 /* PBXContainerItemProxy */;
+		};
+		EC677E7D203BD12600C9A350 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC677E55203BD12600C9A350 /* Cards! */;
+			targetProxy = EC677E7C203BD12600C9A350 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EC677E82203BD12600C9A350 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC677E83203BD12600C9A350 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC677E85203BD12600C9A350 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GWP889CTK9;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AustinsApps.Cards-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC677E86203BD12600C9A350 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GWP889CTK9;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AustinsApps.Cards-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EC677E88203BD12600C9A350 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GWP889CTK9;
+				INFOPLIST_FILE = "Cards!Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AustinsApps.Cards-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cards!.app/Cards!";
+			};
+			name = Debug;
+		};
+		EC677E89203BD12600C9A350 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GWP889CTK9;
+				INFOPLIST_FILE = "Cards!Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AustinsApps.Cards-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cards!.app/Cards!";
+			};
+			name = Release;
+		};
+		EC677E8B203BD12600C9A350 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GWP889CTK9;
+				INFOPLIST_FILE = "Cards!UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AustinsApps.Cards-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Cards!";
+			};
+			name = Debug;
+		};
+		EC677E8C203BD12600C9A350 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GWP889CTK9;
+				INFOPLIST_FILE = "Cards!UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AustinsApps.Cards-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Cards!";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC677E51203BD12600C9A350 /* Build configuration list for PBXProject "Cards!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC677E82203BD12600C9A350 /* Debug */,
+				EC677E83203BD12600C9A350 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC677E84203BD12600C9A350 /* Build configuration list for PBXNativeTarget "Cards!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC677E85203BD12600C9A350 /* Debug */,
+				EC677E86203BD12600C9A350 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC677E87203BD12600C9A350 /* Build configuration list for PBXNativeTarget "Cards!Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC677E88203BD12600C9A350 /* Debug */,
+				EC677E89203BD12600C9A350 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC677E8A203BD12600C9A350 /* Build configuration list for PBXNativeTarget "Cards!UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC677E8B203BD12600C9A350 /* Debug */,
+				EC677E8C203BD12600C9A350 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC677E4E203BD12600C9A350 /* Project object */;
+}
